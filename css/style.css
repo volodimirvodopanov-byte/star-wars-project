@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --primary-color: #eedb00;
     --secondary-color: 60, 69, 67;
@@ -21,37 +16,23 @@ header, footer {
     background-color: rgba(var(--secondary-color), 0.6);
 }
 
-header {
-    border-radius: 16px 16px 0 0;
-}
+header { border-radius: 16px 16px 0 0; }
+footer { border-radius: 0 0 16px 16px; min-height: 60px; }
 
 h1 {
     text-align: center;
-    font-size: 3em;
-    padding: 0.5em;
-}
-
-nav {
-    position: fixed;
-    top: 5px;
-    left: 40px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+    font-size: 2.5em;
+    padding: 0.2em;
 }
 
 .button {
-    display: inline-block;
     border: 2px solid black;
     background-color: rgba(204, 3, 35, 0.5);
     cursor: pointer;
     font-size: 0.8em;
     padding: 0.2em 0.4em;
     border-radius: 5px;
-    color: var(--primary-color);
-    text-decoration: none;
+    display: inline-block;
 }
 
 .button a {
@@ -59,50 +40,13 @@ nav ul {
     text-decoration: none;
 }
 
-main {
-    overflow: hidden;
-    padding: 10px;
-}
 
-.left {
-    float: left;
-    width: 20%;
-    margin-right: 10px;
-}
-
-.left img {
-    display: block;
-    width: 100%;
-    height: auto;
+.luke {
+    width: 45%;
     border: 1px solid black;
     box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.5);
 }
 
-.right {
-    float: right;
-    width: 50%;
-    margin-left: 1%;
-    border: 1px solid var(--primary-color);
-    border-radius: 0 0 16px 16px;
-    background-color: rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.right h2 {
-    flex-basis: 100%;
-    text-align: center;
-    font-size: 0.9em;
-    padding: 0.2em;
-}
-
-.right img {
-    width: 33.333%;
-    height: 100%;
-    object-fit: cover;
-    border: 2px solid black;
-}
 
 .far-galaxy {
     font-size: 1em;
@@ -110,17 +54,19 @@ main {
     text-align: justify;
 }
 
-footer {
-    clear: both;
-    min-height: 70px;
-    padding: 2px;
-    border-radius: 0 0 16px 16px;
-    position: relative;
+
+.dream-team {
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
-footer .button {
-    position: absolute;
-    top: 25%;
-    left: 1px;
-    transform: translateY(-50%);
+.dream-team h2 { font-size: 0.9em; padding: 0.2em; }
+
+.dream-team img {
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    border: 2px solid black;
 }
